@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trabajo Practico Laboratorio de computacion 2</title>
+    <title>Resultados</title>
     <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
@@ -25,56 +25,27 @@
 
 
 <body>
-<h1 align="center">
-    <b>
-       <fontsize ="220"> Bienvenidos </font>
-    </b>
-</h1>
-<div align="right">
-
-</div>
 <div class="wrap">
     <div class="sidebar">
-<h2>
-    Este sitio tiene como objetivo ayudar a los conductores, las rutas de nuestro <br>
-    pais estan cada vez más inseguras y queremos prevenir todo tipo de choque
-</h2>
-        <form id="form1">
-            <p>Para comenzar escoja su vehiculo</p>
-            <select name="Vehículo">
-             <option value="Auto">Auto</option>
-             <option value="Moto">Moto</option>
-             <option value="Camión">Camión</option>
-             <option value="Colectivo">Colectivo</option>
-             <option value="Camioneta">Camioneta</option>
-             <option value="Traffic">Traffic</option>
-            </select>
-            <p>¿En que tipo de ruta esta manejando?</p>
-             <input type="radio" name="ruta" value="Asfalto">Asfalto
-             <input type="radio" name="ruta" value="Cemento"> Cemento
-             <input type="radio" name="ruta" value="Tierra"> Tierra
-             <input type="radio" name="ruta" value="Nieve"> Nieve
-            <p>¿A qué velocidad viene?</p>
-             <input type="number" name="velocidad" min="0" max="300" step="1" value="100">
-             <select name="Unidad">
-                <option value="Km/h">Km/h</option>
-                <option value="Moto">m/s</option>
+
+        <p>La distancia mínima de frenado es:</p>
+        <input type="text" name="Resultado">
+        <select name="Unidad">
+            <option value="Km/h">Km/h</option>
+            <option value="m/s">m/s</option>
         </select>
-        </form>
-        <a href="resultados.html" target="_blank">
-            resultados</a>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+       <h2><u><b>Recomendación:</b></u></h2>
+        <p>Por cuestiones de seguridad siempre aconsejamos llevar una distancia mínima de frenado<b><u> doble </u></b>de frenado.</p>
+        <a href="main.html.html" target="_blank">Volver a calcular la distancia mínima de frenado</a>
 
 
-</div>
-<div>
 
-</div>
-    <div class="main">
-    <img src="images/choque.gif" width="35%">
-        <div/>
-        <div/>
 
-        <div>
+    </div>
+
             <footer>
                 Autores:Facundo Luzuriaga y Francisco Galmes
             </footer>
@@ -83,5 +54,3 @@
 
 </body>
 </html>
-
-
