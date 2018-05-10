@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4bc1fc7-1c5a-4a7b-87d1-414008e018d9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Teorico.html" beforeDir="false" afterPath="$PROJECT_DIR$/Teorico.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -53,8 +52,8 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="123" column="22" lean-forward="true" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
+            <state relative-caret-position="421">
+              <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -112,11 +111,6 @@
               <item name="proyecto2018-luzuriaga-galmes-lab-compu-ii" type="b2602c69:ProjectViewProjectNode" />
               <item name="proyecto2018-luzuriaga-galmes-lab-compu-ii" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="proyecto2018-luzuriaga-galmes-lab-compu-ii" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto2018-luzuriaga-galmes-lab-compu-ii" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -136,6 +130,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JGALMES\Desktop\proyecto2018-luzuriaga-galmes-lab-compu-ii" />
       <recent name="C:\Users\Alumno\Desktop\proyecto2018-luzuriaga-galmes-lab-compu-ii\images" />
       <recent name="C:\Users\Alumno\Desktop\proyecto2018-luzuriaga-galmes-lab-compu-ii" />
     </key>
@@ -234,12 +229,12 @@
       <workItem from="1525277487254" duration="2649000" />
       <workItem from="1525347233901" duration="5098000" />
       <workItem from="1525883217169" duration="2315000" />
-      <workItem from="1525902248137" duration="18122000" />
+      <workItem from="1525902248137" duration="18558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28184000" />
+    <option name="totallyTimeSpent" value="28620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -367,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="123" column="22" lean-forward="true" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
+        <state relative-caret-position="421">
+          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
         </state>
       </provider>
     </entry>
