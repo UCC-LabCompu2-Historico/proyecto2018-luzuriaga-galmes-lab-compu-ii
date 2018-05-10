@@ -27,25 +27,32 @@
 <body>
 <div class="wrap">
     <div class="sidebar">
-
+        <div id="respuesta">
         <p>La distancia mínima de frenado es:</p>
+
         <input type="text" name="Resultado">
         <select name="Unidad">
-            <option value="Km/h">Km/h</option>
-            <option value="m/s">m/s</option>
+            <option value="Km">Km</option>
+            <option value="m">m</option>
+            <option value="cm">cm</option>
         </select>
-        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-            Your browser does not support the HTML5 canvas tag.
+        </div>
+        <canvas id="myCanvas"  style="border:1px solid #3d3d3d";>
         </canvas>
-       <h2><u><b>Recomendación:</b></u></h2>
+
+            <h2><u><b>Recomendación:</b></u></h2>
         <p>Por cuestiones de seguridad siempre aconsejamos llevar una distancia mínima de frenado<b><u> doble </u></b>de frenado.</p>
-        <a href="main.html.html" target="_blank">Volver a calcular la distancia mínima de frenado</a>
+        <div id="vuelta">
+            <a href="index.html" target="_blank">Volver a calcular la distancia mínima de frenado</a>
+        </div>
+       <div >
+           <a href="Teorico.html" target="_blank">Teoria del calculo</a>
+       </div>
 
 
 
 
     </div>
-
             <footer>
                 Autores:Facundo Luzuriaga y Francisco Galmes
             </footer>

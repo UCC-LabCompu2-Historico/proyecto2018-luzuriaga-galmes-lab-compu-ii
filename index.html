@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Trabajo Practico Laboratorio de computacion 2</title>
     <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
@@ -25,21 +27,25 @@
 
 
 <body>
-<h1 align="center">
+
+<div id="Bienvenidos">
+<h1>
     <b>
        <fontsize ="220"> Bienvenidos </font>
     </b>
 </h1>
-<div align="right">
-
 </div>
-<div class="wrap">
-    <div class="sidebar">
-<h2>
-    Este sitio tiene como objetivo ayudar a los conductores, las rutas de nuestro <br>
-    pais estan cada vez más inseguras y queremos prevenir todo tipo de choque
-</h2>
-        <form id="form1">
+
+<div class="Titulo">
+    <h2>
+        Este sitio tiene como objetivo ayudar a los conductores, las rutas de nuestro pais estan cada vez más inseguras y queremos prevenir todo tipo de choque. Para ello creamos un programa que calcula la distancia minima a la que debemos frenar para evitar la colision.
+    </h2>
+</div>
+
+
+
+    <div class="formulario1">
+        <form class="formulario">
             <p>Para comenzar escoja su vehiculo</p>
             <select name="Vehículo">
              <option value="Auto">Auto</option>
@@ -49,6 +55,9 @@
              <option value="Camioneta">Camioneta</option>
              <option value="Traffic">Traffic</option>
             </select>
+        </form>
+
+        <form class="formulario">
             <p>¿En que tipo de ruta esta manejando?</p>
              <input type="radio" name="ruta" value="Asfalto">Asfalto
              <input type="radio" name="ruta" value="Cemento"> Cemento
@@ -61,27 +70,26 @@
                 <option value="Moto">m/s</option>
         </select>
         </form>
-        <a href="resultados.html" target="_blank">
-            resultados</a>
 
 
 </div>
-<div>
-
+<div class="Resultados">
+    <a href="Resultados.html" target="_blank">
+        resultados</a>
 </div>
-    <div class="main">
-    <img src="images/choque.gif" width="35%">
 
-       
 
-        <div>
-            <footer>
-                Autores:Facundo Luzuriaga y Francisco Galmes
-            </footer>
-        </div>
+<div class="gif">
+  <img src="images/choque.gif">
+</div>
+
+<footer>
+    Autores Facundo Luzuriaga y Francisco Galmes
+</footer>
 
 
 </body>
+
 </html>
 
 
