@@ -4,7 +4,9 @@ html,body{
 body
 {   font-family: 'Roboto', sans-serif;
     background-image: url("backee.jpg");
+
 }
+
 
 #Bienvenidos{
     position: absolute;
@@ -73,6 +75,8 @@ div{
     margin-right: 100px;
     margin-bottom: 50px;
     margin-left: 600px;
+    background-color:#FFFFFF;
+    border:1px solid #000000;
 }
 
 
