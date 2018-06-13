@@ -46,10 +46,6 @@
         Este sitio tiene como objetivo ayudar a los conductores, las rutas de nuestro pais estan cada vez más inseguras y queremos prevenir todo tipo de choque. Para ello creamos un programa que calcula la distancia minima a la que debemos frenar para evitar la colision.
     </h2>
 </div>
-
-
-
-
     <div class="formulario1">
         <form class="formulario" >
             <p>Para comenzar escoja su vehiculo</p>
@@ -65,12 +61,12 @@
 
         <form class="formulario" >
             <p>¿En que tipo de ruta esta manejando?</p>
-             <input type="radio" name="ruta" value="Asfalto" id="Asfalto">Asfalto
-             <input type="radio" name="ruta" value="Cemento" id="Cemento"> Cemento
-             <input type="radio" name="ruta" value="Tierra" id="Tierra"> Tierra
-             <input type="radio" name="ruta" value="Nieve" id="Nieve"> Nieve
+             <input type="radio" name="ruta" value="Asfalto" id="Asfalto" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')">Asfalto
+            <input type="radio" name="ruta" value="Cemento" id="Cemento" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')"> Cemento
+            <input type="radio" name="ruta" value="Tierra" id="Tierra" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')"> Tierra
+            <input type="radio" name="ruta" value="Nieve" id="Nieve" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')"> Nieve
             <p>¿A qué velocidad viene?</p>
-             <input type="number" id="velocidad" name="velocidad" min="0" max="300" step="1" value="100">
+             <input type="number" id="velocidad" name="velocidad" min="0" max="300" step="1" value="100" onselect="alert('Ingrese velocidad')">
              <select name="Unidad" id="unidad">
                 <option value="Km/h" id="Km/h">Km/h</option>
                 <option value="m/s" id="m/s">m/s</option>
@@ -80,8 +76,8 @@
 
 
 <div class="Resultados">
-    <a href="Resultados.html" target="_blank">
-        Resultados</a>
+    <button onclick="calculardistancia()">
+        Resultados</button>
 </div>
 
 

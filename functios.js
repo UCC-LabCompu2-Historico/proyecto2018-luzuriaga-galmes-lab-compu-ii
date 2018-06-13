@@ -1,84 +1,83 @@
 function calculardistancia() {
-    var Auto=document.getElementById(Auto).value;
-    var Moto=document.getElementById(Moto).value;
-    var Camion=document.getElementById(Camion).value;
-    var Colectivo=document.getElementById(Colectivo).value;
-    var Camioneta=document.getElementById(Camioneta).value;
-    var Traffic=document.getElementById(Traffic).value;
-    var Asfalto=document.getElementById(Asfalto).value;
-    var Cemento=document.getElementById(Cemento).value;
-    var Tierra=document.getElementById(Tierra).value;
-    var Nieve=document.getElementById(Nieve).value;
-    var Kmporh=document.getElementById(Km/h).value;
-    var mporh=document.getElementById(m/h).value;
-    var vehiculo=document.getElementById(vehiculo).value;
-    var unidad=document.getElementById(unidad).value;
-    var velocidad=document.getElementById(velocidad).value;
+    var Auto = document.getElementById("Auto").value;
+    var Moto = document.getElementById("Moto").value;
+    var Camion = document.getElementById("Camion").value;
+    var Colectivo = document.getElementById("Colectivo").value;
+    var Camioneta = document.getElementById("Camioneta").value;
+    var Traffic = document.getElementById("Traffic").value;
+    var Asfalto = document.getElementById("Asfalto").checked;
+    var Cemento = document.getElementById("Cemento").checked;
+    var Tierra = document.getElementById("Tierra").checked;
+    var Nieve = document.getElementById("Nieve").checked;
+    var Kmporh = document.getElementById("Km/h").value;
+    var mpors = document.getElementById("m/s").value;
+    var vehiculo = document.getElementById("vehiculo").value;
+    var unidad = document.getElementById("unidad").value;
+    var velocidad = document.getElementById("velocidad").value;
+    var coefroz
+    var resultado;
+    var url = "Resultados.html#res=" + resultado;
+    document.location.assign(url);
 
-    if (vehiculo == Auto) {
-       if(Asfalto) {
-           if (unidad == Kmporh) {
-                 if (velocidad < 50) {
-                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                 }
-                 else {
-                     return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
-                   }
-
-
-               }
-               else {
-
-               }
-           }
-        if(Cemento) {
-            if (unidad == Kmporh) {
+    if (vehiculo === "Auto") {
+        if (Asfalto === true) {
+            if (unidad === "Kmporh") {
                 if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
+                    coefroz = 0.7;
                 }
                 else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.67);
-                    }
-
-
+                    coefroz = 0.63;
+                }
             }
-            else {
+            if (unidad === "mpors") {
 
             }
         }
-        if(Tierra) {
-            if (unidad == Kmporh) {
+        if (Cemento) {
+            if (unidad === "Kmporh") {
                 if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
+                    coefroz = 0.7;
                 }
                 else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                    }
-
-
+                    coefroz = 0.67;
+                }
             }
-            else {
+            if (unidad === mpors) {
 
             }
         }
-        if(Nieve) {
-            if (unidad == Kmporh) {
+        if (Tierra) {
+            if (unidad === Kmporh) {
                 if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
+                    coefroz = 0.65;
                 }
                 else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.15);
-                    }
+                    coefroz = 0.65;
+                }
+            }
+            if (unidad === mpors) {
 
             }
-            else {
+            }
+        }
+        if (Nieve) {
+            if (unidad == Kmporh) {
+                if (velocidad < 50) {
+                    coefroz = 0.17;
+                }
+                else {
+                    coefroz =0.15;
+                }
+
+            }
+            if (unidad == mpors) {
 
             }
         }
-       }
+    }
 
     if (vehiculo == Moto) {
-        if(Asfalto) {
+        if (Asfalto) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -86,14 +85,12 @@ function calculardistancia() {
                 else {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
                 }
-
-
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Cemento) {
+        if (Cemento) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -104,11 +101,11 @@ function calculardistancia() {
 
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Tierra) {
+        if (Tierra) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
@@ -119,11 +116,11 @@ function calculardistancia() {
 
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Nieve) {
+        if (Nieve) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
@@ -133,13 +130,13 @@ function calculardistancia() {
                 }
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
     }
     if (vehiculo == Camion) {
-        if(Asfalto) {
+        if (Asfalto) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -147,14 +144,12 @@ function calculardistancia() {
                 else {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
                 }
-
-
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Cemento) {
+        if (Cemento) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -165,11 +160,11 @@ function calculardistancia() {
 
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Tierra) {
+        if (Tierra) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
@@ -180,11 +175,11 @@ function calculardistancia() {
 
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Nieve) {
+        if (Nieve) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
@@ -194,13 +189,13 @@ function calculardistancia() {
                 }
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
     }
     if (vehiculo == Colectivo) {
-        if(Asfalto) {
+        if (Asfalto) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -208,14 +203,12 @@ function calculardistancia() {
                 else {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
                 }
-
-
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Cemento) {
+        if (Cemento) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -226,11 +219,11 @@ function calculardistancia() {
 
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Tierra) {
+        if (Tierra) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
@@ -241,11 +234,11 @@ function calculardistancia() {
 
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Nieve) {
+        if (Nieve) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
@@ -255,13 +248,13 @@ function calculardistancia() {
                 }
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
     }
     if (vehiculo == Camioneta) {
-        if(Asfalto) {
+        if (Asfalto) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -269,14 +262,12 @@ function calculardistancia() {
                 else {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
                 }
-
-
             }
-            else {
+            if (unidad == mporh) {
 
             }
         }
-        if(Cemento) {
+        if (Cemento) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -287,11 +278,11 @@ function calculardistancia() {
 
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Tierra) {
+        if (Tierra) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
@@ -302,11 +293,11 @@ function calculardistancia() {
 
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Nieve) {
+        if (Nieve) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
@@ -316,13 +307,13 @@ function calculardistancia() {
                 }
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
     }
     if (vehiculo == Traffic) {
-        if(Asfalto) {
+        if (Asfalto) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -330,17 +321,12 @@ function calculardistancia() {
                 else {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
                 }
-
-
             }
-            else {
+            if (unidad == mporh) {
 
             }
         }
-
-        }
-
-        if(Cemento) {
+        if (Cemento) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
@@ -348,12 +334,14 @@ function calculardistancia() {
                 else {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.67);
                 }
+
+
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Tierra) {
+        if (Tierra) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
@@ -364,11 +352,11 @@ function calculardistancia() {
 
 
             }
-            else {
+            if (unidad == mpors) {
 
             }
         }
-        if(Nieve) {
+        if (Nieve) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
                     return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
@@ -378,19 +366,120 @@ function calculardistancia() {
                 }
 
             }
+            if (unidad == mpors) {
+
             }
+        }
     }
 
+var cnv, ctx, pos_x = 0, img ,imgpie;
+
+imgpie= new Image();
+imgpie.src='Piedra.png';
+
+imgboom= new Image();
+imgboom.src='boom.jpg';
+
+imgarbol= new Image();
+imgarbol.src='Arbol.jpg';
+
+function dibujar(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(imgpie,250,101,50,50);
+
+}
+
+window.onload = function(){
+    img = new Image();
+    img.src = 'autoprueb.png';
+    cnv = document.getElementById('myCanvas');
+    ctx = cnv.getContext('2d');
+    anim();
+}
+
+function dibujarboom(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(imgboom,223,77,70,70);
+}
+
+
+function dibujararbol(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(imgarbol,230,30,70,130);
+
+}
+
+
+function anim(){
+    ctx.clearRect(0, 0, 600, 200);
+    ctx.drawImage(img, pos_x, 90,75,75);
+    dibujararbol();
+    pos_x += 1;
+    if(pos_x  >170){
+        dibujararbol();
+        ctx.drawImage(img, 170, 90,75,75);
+        dibujarboom();
+        //setTimeout(onpause);
+    }
+
+    setTimeout(anim, 50);
+}
 
 
 
-/*
-function dibujarImagenCanvasAnimacion() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* function dibujarImagenCanvasAnimacion() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
     ctx.drawImage(img, coorX +1, coorY));
 }
-*/
+
 var velX = 25;
 var int;
 
@@ -423,7 +512,7 @@ function dibujar(){
 
 
 
-/*
+
 
 function mover(){
     var ctx=document.getElementById('myCanvas').getContext('2d');
@@ -433,10 +522,10 @@ function mover(){
 }
 
 
-*/
 
 
-/*
+
+
 function dibujarImagenCanvas(){
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
@@ -445,12 +534,12 @@ function dibujarImagenCanvas(){
     var coorX = 0, coorY = 10;
     var t = 0;
 
-   // var coorX, coorY;
+ var coorX, coorY;
     coorX = Number(document.getElementById('posicionX').value);
     coorY = Number(document.getElementById('posicionY').value);
     canvas.width = canvas.width;
-  //  var img = new Image();
-    //img.src = 'autoprueb.png';
+  var img = new Image();
+  img.src = 'autoprueb.png';
     ctx.drawImage(img, coorX, coorY);
 }
 
@@ -478,5 +567,4 @@ function animar() {
         dibujarImagenCanvasAnimacion();
         console.log("X " + coorX + "   Y " + coorY)
     }1000/30)
-
-    */
+*/
