@@ -337,6 +337,9 @@ function calculardistancia() {
 
             }
         }
+
+        }
+
         if(Cemento) {
             if (unidad == Kmporh) {
                 if (velocidad < 50) {
@@ -375,33 +378,52 @@ function calculardistancia() {
                 }
 
             }
-            else {
-
             }
-        }
     }
 
 
+
+
+/*
+function dibujarImagenCanvasAnimacion() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, coorX +1, coorY));
+}
+*/
+var velX = 25;
+var int;
+
+function animar() {
+    var cant = 0;
+    int = setInterval(function () {
+        t += 0.1;
+        coorX = t * velX;
+        coorY = 0;
+
+        if(coorX>canvas.width)
+            clearInterval(int);
+
+        dibujar();
+
+    }1000/30)
 }
 
 
-
-
-
-
-
-
-
-
-
-
-function dibujar() {
+function dibujar(){
     var ctx=document.getElementById('myCanvas').getContext('2d');
     var image = new Image ();
     image.src= "autoprueb.png" ;
-    ctx.drawImage(image,0,100,65,65);
-    setInterval(mover,100)
+    var coorX = 0, coorY = 90;
+    var height=75, width=75;
+    //  var t = 0;
+    ctx.drawImage(image,coorX,coorY,height,width);
 }
+
+
+
+
+/*
 
 function mover(){
     var ctx=document.getElementById('myCanvas').getContext('2d');
@@ -411,33 +433,38 @@ function mover(){
 }
 
 
-var img = new Image();
-img.src = 'autoprueb.png';
-var coorX = 0, coorY = 400;
-var t = 0;
+*/
 
+
+/*
 function dibujarImagenCanvas(){
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
-    var coorX, coorY;
+    var img = new Image();
+    img.src = 'autoprueb.png';
+    var coorX = 0, coorY = 10;
+    var t = 0;
+
+   // var coorX, coorY;
     coorX = Number(document.getElementById('posicionX').value);
     coorY = Number(document.getElementById('posicionY').value);
     canvas.width = canvas.width;
-    var img = new Image();
-    img.src = 'autoprueb.png';
+  //  var img = new Image();
+    //img.src = 'autoprueb.png';
     ctx.drawImage(img, coorX, coorY);
 }
+
 function dibujarImagenCanvasAnimacion() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
     canvas.width = canvas.width;
-
     ctx.drawImage(img, coorX, 600-127 + (-1 * coorY));
 }
 
 var velX = 25;
 var velY = 100;
 var int;
+
 function animar() {
     var cant = 0;
     int = setInterval(function () {
@@ -450,4 +477,6 @@ function animar() {
 
         dibujarImagenCanvasAnimacion();
         console.log("X " + coorX + "   Y " + coorY)
-    } //1000 / 30)
+    }1000/30)
+
+    */
