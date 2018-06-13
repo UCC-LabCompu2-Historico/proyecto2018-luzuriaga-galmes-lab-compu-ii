@@ -19,7 +19,7 @@ function calculardistancia() {
 
     var resultado;
     var url = "Resultados.html#res=" + resultado;
-    var dato =document.location.split("#");
+    var dato =document.location.assign(url);
 
     if (vehiculo === "Auto") {
         if (Asfalto === true) {
