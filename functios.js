@@ -14,14 +14,211 @@ function calculardistancia() {
     var vehiculo = document.getElementById("vehiculo").value;
     var unidad = document.getElementById("unidad").value;
     var velocidad = document.getElementById("velocidad").value;
-    var coefroz
+    var coefroz;
+
+
     var resultado;
     var url = "Resultados.html#res=" + resultado;
-    document.location.assign(url);
+    var dato =document.location.split("#");
 
     if (vehiculo === "Auto") {
         if (Asfalto === true) {
             if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.63;
+                }}}
+        if (Cemento) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.67;
+                }}}
+        if (Tierra) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.65;
+                }
+                else {
+                    coefroz = 0.65;
+                }
+            }}
+        if (Nieve) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.17;
+                }
+                else {
+                    coefroz =0.15;
+                }
+            }
+        }
+    }
+
+    if (vehiculo === Moto) {
+        if (Asfalto === true) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.63;
+                }}}
+        if (Cemento) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.67;
+                }}}
+        if (Tierra) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.65;
+                }
+                else {
+                    coefroz = 0.65;
+                }}}
+        if (Nieve) {
+            if (unidad === "Kmporh") {
+            velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.17;
+        }
+                else {
+                    coefroz =0.15;
+        }}}
+}
+    if (vehiculo === Camion) {
+        if (Asfalto === true) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.63;
+                }}}
+        if (Cemento) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.67;
+                }}}
+        if (Tierra) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.65;
+                }
+                else {
+                    coefroz = 0.65;
+                }}}
+if (Nieve) {
+    if (unidad === "Kmporh") {
+        velocidad=velocidad/3.6;
+        if (velocidad < 50) {
+            coefroz = 0.17;
+        }
+        else {
+            coefroz =0.15;
+        }}}
+}
+    if (vehiculo === Colectivo) {
+        if (Asfalto === true) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.63;
+                }}}
+        if (Cemento) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.67;
+                }}}
+        if (Tierra) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.65;
+                }
+                else {
+                    coefroz = 0.65;
+                }}}
+        if (Nieve) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.17;
+                }
+                else {
+                    coefroz =0.15;
+                }}}
+}
+    if (vehiculo === Camioneta) {
+        if (Asfalto === true) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.63;
+                }}}
+        if (Cemento) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.7;
+                }
+                else {
+                    coefroz = 0.67;
+                }}}
+        if (Tierra) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.65;
+                }
+                else {
+                    coefroz = 0.65;
+                }}}
+        if (Nieve) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
+                if (velocidad < 50) {
+                    coefroz = 0.17;
+                }
+                else {
+                    coefroz =0.15;
+                }}}
+    }
+    if (vehiculo === Traffic) {
+        if (Asfalto === true) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
                 if (velocidad < 50) {
                     coefroz = 0.7;
                 }
@@ -29,12 +226,11 @@ function calculardistancia() {
                     coefroz = 0.63;
                 }
             }
-            if (unidad === "mpors") {
 
-            }
         }
         if (Cemento) {
             if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
                 if (velocidad < 50) {
                     coefroz = 0.7;
                 }
@@ -42,12 +238,10 @@ function calculardistancia() {
                     coefroz = 0.67;
                 }
             }
-            if (unidad === mpors) {
-
-            }
         }
         if (Tierra) {
-            if (unidad === Kmporh) {
+            if (unidad === "Kmporh") {
+                velocidad=velocidad/3.6;
                 if (velocidad < 50) {
                     coefroz = 0.65;
                 }
@@ -55,322 +249,23 @@ function calculardistancia() {
                     coefroz = 0.65;
                 }
             }
-            if (unidad === mpors) {
-
-            }
-            }
-        }
-        if (Nieve) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    coefroz = 0.17;
-                }
-                else {
-                    coefroz =0.15;
-                }
-
-            }
-            if (unidad == mpors) {
-
-            }
         }
     }
-
-    if (vehiculo == Moto) {
-        if (Asfalto) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
-                }
-            }
-            if (unidad == mpors) {
-
-            }
+if (Nieve) {
+    if (unidad === "Kmporh") {
+        velocidad=velocidad/3.6;
+        if (velocidad < 50) {
+            coefroz = 0.17;
         }
-        if (Cemento) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.67);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Tierra) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Nieve) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.15);
-                }
-
-            }
-            if (unidad == mpors) {
-
-            }
+        else {
+            coefroz =0.15;
         }
     }
-    if (vehiculo == Camion) {
-        if (Asfalto) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
-                }
-            }
-            if (unidad == mpors) {
+}
 
-            }
-        }
-        if (Cemento) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.67);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Tierra) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Nieve) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.15);
-                }
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
     }
-    if (vehiculo == Colectivo) {
-        if (Asfalto) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
-                }
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Cemento) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.67);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Tierra) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Nieve) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.15);
-                }
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-    }
-    if (vehiculo == Camioneta) {
-        if (Asfalto) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
-                }
-            }
-            if (unidad == mporh) {
-
-            }
-        }
-        if (Cemento) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.67);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Tierra) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Nieve) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.15);
-                }
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-    }
-    if (vehiculo == Traffic) {
-        if (Asfalto) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.63);
-                }
-            }
-            if (unidad == mporh) {
-
-            }
-        }
-        if (Cemento) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.7);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.67);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Tierra) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.65);
-                }
-
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-        if (Nieve) {
-            if (unidad == Kmporh) {
-                if (velocidad < 50) {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.17);
-                }
-                else {
-                    return ((velocidad * velocidad) / 9.8 * 2 * 0.15);
-                }
-
-            }
-            if (unidad == mpors) {
-
-            }
-        }
-    }
+resultado= (velocidad * velocidad)/(2*9.8*coefroz);
+}
 
 var cnv, ctx, pos_x = 0, img ,imgpie;
 
