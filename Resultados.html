@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+Resultados<!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Resultados</title>
+    <title>Trabajo Practico Laboratorio de computacion 2</title>
     <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
@@ -26,43 +28,39 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
-
 </head>
-
-
 <body>
-    <div class="sidebar">
-        <div id="respuesta">
+<div class="sidebar">
+    <div id="respuesta">
         <p>La distancia mínima de frenado es:</p>
 
-        <input type="text" name="Resultado">
-        <select name="Unidad">
-            <option value="Km">Km</option>
-            <option value="m">m</option>
-            <option value="cm">cm</option>
+        <input type="text" name="Resultado"  >
+        <select name="Unidad" id="conversion" >
+            <option value="metro" id="metro">m</option>
+            <option value="Km" id="Km">Km</option>
+            <option value="cm" id="cm">cm</option>
         </select>
-        </div>
-        <canvas id="myCanvas" onclick="dibujar()", onclick="animar()"></canvas>
+    </div>
+    <canvas id="myCanvas" ></canvas>
 
     <div id="recomendacion">
-            <h2><u><b>Recomendación:</b></u></h2>
+        <h2><u><b>Recomendación:</b></u></h2>
         <p>Por cuestiones de seguridad siempre aconsejamos llevar una distancia mínima de frenado<b><u> doble </u></b>de frenado.</p>
     </div>
-        <div id="vuelta">
-            <a href="index.html" target="_blank">Volver a calcular la distancia mínima de frenado</a>
-        </div>
-       <div id="teoria" >
-           <a href="Teorico.html" target="_blank">Teoria del calculo</a>
-       </div>
-
-
-
-
+    <div id="vuelta">
+        <a href="index.html" target="_blank">Volver a calcular la distancia mínima de frenado</a>
     </div>
-            <footer>
-                Autores:Facundo Luzuriaga y Francisco Galmes
-            </footer>
+    <div id="teoria" >
+        <a href="Teorico.html" target="_blank">Teoria del calculo</a>
+    </div>
+
+
+
+
+</div>
+<footer>
+    Autores:Facundo Luzuriaga y Francisco Galmes
+</footer>
 
 
 

@@ -25,6 +25,14 @@ body
     margin-left: 50px;
     margin-top: 675px;
 }
+.alerta{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 675px;
+    color: #6272ff;
+    background-color: #889ccf;
+    border-radius: 15px;
+}
 .Titulo{
     position: absolute;
     margin-left: 15px;
@@ -171,19 +179,11 @@ footer{
 #vuelta2{
     margin-top: 425px;
 }
-/*.container-fluid{
 
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    background: #889ccf;
-    margin: 25px;
+#boton{
+    color: #8893ff;
+    background-color: black;
+    border-radius: 15px;
+}
 
-    padding: 100px;
-    border-radius: 35px 0px 35px 0px;
-    -moz-border-radius: 35px 0px 35px 0px;
-    -webkit-border-radius: 35px 0px 35px 0px;
-    border: 2px solid #5878ca
 }
