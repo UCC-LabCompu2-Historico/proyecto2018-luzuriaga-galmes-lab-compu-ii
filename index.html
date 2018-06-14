@@ -46,6 +46,7 @@
         Este sitio tiene como objetivo ayudar a los conductores, las rutas de nuestro pais estan cada vez más inseguras y queremos prevenir todo tipo de choque. Para ello creamos un programa que calcula la distancia minima a la que debemos frenar para evitar la colision.
     </h2>
 </div>
+<<<<<<< HEAD
 <div class="formulario1">
     <form class="formulario" >
         <p>Para comenzar escoja su vehiculo</p>
@@ -56,6 +57,32 @@
             <option value="Colectivo" id="Colectivo">Colectivo</option>
             <option value="Camioneta" id="Camioneta">Camioneta</option>
             <option value="Traffic" id="Traffic">Traffic</option>
+=======
+    <div class="formulario1">
+        <form class="formulario" >
+            <p>Para comenzar escoja su vehiculo</p>
+            <select name="Vehículo" id="vehiculo">
+             <option value="Auto" id="Auto">Auto</option>
+             <option value="Moto" id="Moto">Moto</option>
+             <option value="Camión" id="Camion">Camión</option>
+             <option value="Colectivo" id="Colectivo">Colectivo</option>
+             <option value="Camioneta" id="Camioneta">Camioneta</option>
+             <option value="Traffic" id="Traffic">Traffic</option>
+            </select>
+        </form>
+
+        <form class="formulario" >
+            <p>¿En que tipo de ruta esta manejando?</p>
+             <input type="radio" name="ruta" value="Asfalto" id="Asfalto" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')">Asfalto
+            <input type="radio" name="ruta" value="Cemento" id="Cemento" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')"> Cemento
+            <input type="radio" name="ruta" value="Tierra" id="Tierra" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')"> Tierra
+            <input type="radio" name="ruta" value="Nieve" id="Nieve" onchange="alert('Con este dato sabemos el coeficiente de rozamiento que varia segun la superficie')"> Nieve
+            <p>¿A qué velocidad viene?</p>
+             <input type="number" id="velocidad" name="velocidad" min="0" max="300" step="1" value="100" onselect="alert('Ingrese velocidad')">
+             <select name="Unidad" id="unidad">
+                <option value="Km/h" id="Km/h">Km/h</option>
+                <option value="m/s" id="m/s">m/s</option>
+>>>>>>> a3a41981beb02d63b48c17822d6199be9d878317
         </select>
     </form>
 
@@ -78,10 +105,13 @@
 <div class="Resultados">
     <button id="boton" onclick="calculardistancia()">
         Resultados</button>
+<<<<<<< HEAD
 </div>
 <div class="alerta">
     <button id="boton2" onclick="alert(velocidadunidad())">
         ¿Cuanto seria en metros por segundo?</button>
+=======
+>>>>>>> a3a41981beb02d63b48c17822d6199be9d878317
 </div>
 
 
