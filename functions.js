@@ -1,7 +1,14 @@
+
 function velocidadunidad() { //cambio de unidades
     var velocidad = document.getElementById("velocidad").value;
-    res = velocidad / 3.6;
-    return res;
+    var unidad = document.getElementById("unidad").value;
+    var res;
+    if (unidad === "m/s")
+        return velocidad;
+    else {
+        res = velocidad / 3.6;
+        return res;
+    }
 }
 
 function calculardistancia() { //Metodo para calcular la distancia minima de frenado
@@ -77,8 +84,6 @@ function dibujarpiedra() {
     ctx.drawImage(imgarbol, 230, 80, 70, 70);
 
 }
-
-
 
 function dibujarboom() {
     var canvas = document.getElementById("myCanvas");
@@ -163,7 +168,7 @@ function anim() {    //Funcion principal se la dejo comentada ya que no me funci
     dibujarfondociudad();
     dibujarpiedra();// dibujo piedra
     Eleccionvehiculo(); //Luego llamo a Eleccionvehiculo(); que lo que hace es preguntar que opcion se eligio en el menu principal
-                       //Dependiendo de cual se eligio dibuja lo que le corresponde
+    //Dependiendo de cual se eligio dibuja lo que le corresponde
     pos_x += 1;        //Esta imagen que se dibuja se mueve ene el eje x 1 pixel cada 10 mili segundos
     if (pos_x > 170) { //Cuando llega a x=170 se para ya que choca y ahi la vuelvo a imprimir quieta junto a una explosion y al arbol
         pos_x = 170;
@@ -178,7 +183,8 @@ function anim() {    //Funcion principal se la dejo comentada ya que no me funci
 
 function mostrarrespuesta() {
     var datos = document.location.hash.split('#');
-    var respuesta ;
-    respuesta = datos[1];
-    document.Resultado.value = respuesta;
+    document.res.Resultado.value = datos[1];
 }
+
+
+
