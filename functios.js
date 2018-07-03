@@ -40,28 +40,29 @@ var cnv, ctx, pos_x = 0, img, imgpie;
 //Aqui declaro todas las imagenes a utilizar
 
 imgmoto = new Image();
-imgmoto.src = 'Moto.jpg';
-
-imgpie = new Image();
-imgpie.src = 'Piedra.png';
+imgmoto.src = 'imagenes/Moto.jpg';
 
 imgboom = new Image();
-imgboom.src = 'boom.jpg';
+imgboom.src = 'imagenes/boom.jpg';
 
 imgarbol = new Image();
-imgarbol.src = 'Arbol.jpg';
+imgarbol.src = 'imagenes/Arbol.jpg';
 
 imgautochoque = new Image();
-imgautochoque.src = 'autoprueb.png';
+imgautochoque.src = 'imagenes/autoprueb.png';
 
 imgcamion = new Image();
-imgcamion.src = 'Camion.jpg';
+imgcamion.src = 'imagenes/Camion.jpg';
 
 imgcamioneta = new Image();
-imgcamioneta.src = 'Camioneta.jpg';
+imgcamioneta.src = 'imagenes/Camioneta.jpg';
 
 imgtraffic = new Image();
-imgtraffic.src = 'Traffic.jpg';
+imgtraffic.src = 'imagenes/Traffic.jpg';
+
+imgcolectivo = new Image();
+imgcolectivo.src = 'imagenes/Colectivo.jpg';
+
 
 //Aca declaro todas las funciones dibujar, dependendiendo cual sea llamada es cual se dibuja, tuve que hacerlas por separado ya que cada imagen tenia distintos tamaños
 //y debia ajustarla a una por una
@@ -89,7 +90,6 @@ function dibujarauto() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
     ctx.drawImage(imgautochoque, pos_x, 90, 75, 75);
-
 }
 
 function dibujarcamion() {
@@ -111,6 +111,13 @@ function dibujartraffic() {
 
 }
 
+function dibujarcolectivo() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(imgcolectivo, pos_x, 80, 70, 70);
+
+}
+
 function Eleccionvehiculo() { //A traves de esta funcion chequeo que Vehiculo escogio el usuario para poder graficarlo con esa imagen
     //getSelectedOption(Vehiculo.text)
     var datos = document.location.hash.split('#');
@@ -126,6 +133,8 @@ function Eleccionvehiculo() { //A traves de esta funcion chequeo que Vehiculo es
         dibujartraffic();
     if (Vehiculo === 'Camioneta')
         dibujarcamioneta();
+    if (Vehiculo === 'Colectivo')
+        dibujarcolectivo();
 }
 
 //Funcion principal arranca cuando se ingresa en la seccion resultados tiene dentro funcion anim
@@ -133,7 +142,7 @@ function start () {
     cnv = document.getElementById('myCanvas');
     ctx = cnv.getContext('2d');
     anim();
-};
+}
 
 
 function anim() {    //Funcion principal se la dejo comentada ya que no me funciona. (Problema al realizar los ifs)
@@ -149,4 +158,11 @@ function anim() {    //Funcion principal se la dejo comentada ya que no me funci
         dibujarboom();
     }
     setTimeout(anim, 10);    //Alfinal de la funcion declaro el intervalo de tiempo para que se repita la funcion
+}
+
+function mostrarrespuesta() {
+    var datos = document.location.hash.split('#');
+    var respuesta ;
+    respuesta = datos[1];
+    document.Resultado.value = respuesta;
 }
