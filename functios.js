@@ -64,26 +64,32 @@ imgcolectivo = new Image();
 imgcolectivo.src = 'imagenes/Colectivo.jpg';
 
 
+imgfondociudad = new Image();
+imgfondociudad.src = 'imagenes/fondociudad.jpg';
+
+
 //Aca declaro todas las funciones dibujar, dependendiendo cual sea llamada es cual se dibuja, tuve que hacerlas por separado ya que cada imagen tenia distintos tamaños
 //y debia ajustarla a una por una
 
-function dibujararbol() {
+function dibujarpiedra() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
-    ctx.drawImage(imgarbol, 230, 30, 70, 130);
+    ctx.drawImage(imgarbol, 230, 80, 70, 70);
 
 }
+
+
 
 function dibujarboom() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
-    ctx.drawImage(imgboom, 223, 77, 70, 70);
+    ctx.drawImage(imgboom, 210, 77, 70, 70);
 }
 
 function dibujarmoto() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
-    ctx.drawImage(imgmoto, pos_x, 80, 70, 70);
+    ctx.drawImage(imgmoto, pos_x, 85, 70, 70);
 }
 
 function dibujarauto() {
@@ -118,6 +124,13 @@ function dibujarcolectivo() {
 
 }
 
+function dibujarfondociudad(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(imgfondociudad, 0, 0, 310, 120);
+
+}
+
 function Eleccionvehiculo() { //A traves de esta funcion chequeo que Vehiculo escogio el usuario para poder graficarlo con esa imagen
     //getSelectedOption(Vehiculo.text)
     var datos = document.location.hash.split('#');
@@ -147,15 +160,18 @@ function start () {
 
 function anim() {    //Funcion principal se la dejo comentada ya que no me funciona. (Problema al realizar los ifs)
     ctx.clearRect(0, 0, 600, 200); //Lo que hago es limpio el canvas
-    dibujararbol();   // dibujo sobre el el arbol
+    dibujarfondociudad();
+    dibujarpiedra();// dibujo piedra
     Eleccionvehiculo(); //Luego llamo a Eleccionvehiculo(); que lo que hace es preguntar que opcion se eligio en el menu principal
-                        //Dependiendo de cual se eligio dibuja lo que le corresponde
+                       //Dependiendo de cual se eligio dibuja lo que le corresponde
     pos_x += 1;        //Esta imagen que se dibuja se mueve ene el eje x 1 pixel cada 10 mili segundos
     if (pos_x > 170) { //Cuando llega a x=170 se para ya que choca y ahi la vuelvo a imprimir quieta junto a una explosion y al arbol
         pos_x = 170;
-        dibujararbol();
+        dibujarfondociudad();
+        dibujarpiedra();
         Eleccionvehiculo();
         dibujarboom();
+
     }
     setTimeout(anim, 10);    //Alfinal de la funcion declaro el intervalo de tiempo para que se repita la funcion
 }
