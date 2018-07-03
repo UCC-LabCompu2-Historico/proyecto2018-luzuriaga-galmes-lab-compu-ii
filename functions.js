@@ -19,7 +19,6 @@ function calculardistancia() { //Metodo para calcular la distancia minima de fre
     var coefroz;
     var resultado;
 
-
     if (unidad === "Km/h") {
         velocidad = velocidad / 3.6;
     }
@@ -183,7 +182,13 @@ function anim() {    //Funcion principal se la dejo comentada ya que no me funci
 
 function mostrarrespuesta() {
     var datos = document.location.hash.split('#');
-    document.res.Resultado.value = datos[1];
+
+    if( datos[1] === 'NaN'){
+        document.res.Resultado.value = 'Falta introducir ruta';
+    }
+    else {
+        document.res.Resultado.value = datos[1];
+    }
 }
 
 
