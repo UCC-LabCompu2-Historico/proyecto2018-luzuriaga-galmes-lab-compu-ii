@@ -1,5 +1,6 @@
-# proyecto2018-luzuriaga-galmes-lab-compu-ii
-proyecto2018-luzuriaga-galmes-lab-compu-ii created by GitHub Classroom
+# Bienvenidos a nuestra pagina web.
 
+Creadores Facundo Luzuriaga y Francisco Galmes
+----------------------------------------------
 
-[Ver] (https://proyecto2018-luzuriaga-galmes-lab-compu-ii.github.io/Galmes-Luzuriaga)
+[Ver pagina web] **(https://UCC-LabCompu2.github.io/proyecto2018-luzuriaga-galmes-lab-compu-ii/index.html)**
