@@ -1,5 +1,9 @@
-
-function velocidadunidad() { //cambio de unidades
+/**
+ * es para cambiar unidades
+ * @var {String} método nombre del método
+ * @return  la velocidad en m/s
+ */
+function velocidadunidad() {
     var velocidad = document.getElementById("velocidad").value;
     var unidad = document.getElementById("unidad").value;
     var res;
@@ -10,7 +14,11 @@ function velocidadunidad() { //cambio de unidades
         return res;
     }
 }
-
+/**
+ * calcula distancia
+ * @var  de los inputs del formulario
+ * @return url con resultado
+ */
 function calculardistancia() { //Metodo para calcular la distancia minima de frenado
     var Vehiculo = document.getElementById("vehiculo").value;
     var Ruta = document.formulario.ruta.value;
@@ -179,7 +187,11 @@ function anim() {    //Funcion principal se la dejo comentada ya que no me funci
     }
     setTimeout(anim, 10);    //Alfinal de la funcion declaro el intervalo de tiempo para que se repita la funcion
 }
-
+/**
+ * Muestra respuesta en input
+ * @var datos que viene de el resultado de la url
+ * @return da el valor al input
+ */
 function mostrarrespuesta() {
     var datos = document.location.hash.split('#');
 
